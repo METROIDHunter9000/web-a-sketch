@@ -1,0 +1,82 @@
+* {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border-radius: 56px;
+  border: 0 none;
+  min-width: 112px;
+  min-height: 112px;
+  background-color: #BB1234;
+  color: white;
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: #FF1122;
+}
+
+#container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  min-width: 80vw;
+  min-height: 95vh;
+  background-color: teal;
+  border-radius: 64px;
+}
+
+#frame, #controls {
+  margin: 0 100px;
+}
+
+#frame {
+  background-color: white;
+  border-radius: 16px;
+  min-width: 65vw;
+  min-height: 70vh;
+  padding: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tile {
+  background: white;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.tile.burned {
+  background-color: black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+
+  flex-grow: 1;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#title {
+  font-size: 64px;
+  color: white;
+}
